@@ -1,0 +1,38 @@
+.about{
+        background-image: url('../assets/back2.jpg');
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        height: 100vh;
+        /*background: linear-gradient(#ff21a8,#ff61a8,pink);*/
+}
+#contact{
+        background-image: url('../assets/contact.jpg');
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        height: 100vh;
+        /*background: linear-gradient(#ff21a8,#ff61a8,pink);*/
+}
+
+.nav{
+        float: right;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 700;
+}
+.flex-container > div {
+        width: 200px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+}
+.flex-container{
+        justify-content: space-around;
+        display: flex;
+        padding: 20px;
+}
+#contact i{
+        font-size: 80px;
+        padding: 10px;
+}
