@@ -4,7 +4,6 @@ import Contact from './Components/Contact';
 import Projects from './Components/Projects';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import PdfDownloader from './Pages/PdfDownloader';
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
           <Route path='/about' Component={<About/>}/>
           <Route path='/projects' Component={<Projects/>}/>
           <Route path='/contact' Component={<Contact/>}/>
-          <Route path='/pdf' element={<PdfDownloader/>}/>
         </Routes>
       </Router>
     </div>

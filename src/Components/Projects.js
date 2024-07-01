@@ -57,54 +57,71 @@ function Projects() {
           renderArrowPrev={renderArrowPrev}
           renderArrowNext={renderArrowNext}
         >
-          <div style={{ backgroundColor: 'pink', margin: '0px 200px', display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', padding: '50px 100px', borderRadius: '15px'}}>
-            <div><a href='https://slcm-valina.netlify.app' target='_blank' rel='noopener noreferrer'><img alt="pms" src={slcm} style={{height: '550px', width: "500px"}}/></a></div>
-            <div align='center' style={{ marginLeft: '10%', textAlign: "justify"  }}>
-              <span style={{ fontSize: '30px', textAlign: "center"}}>Student Life Cycle Management System</span>
-              <br /><br /><br />
-              The Student Lifecycle Management (SLCM) System is an integrated software platform designed to streamline and enhance the administrative and academic processes of educational institutions. It provides a comprehensive solution to manage the entire student lifecycle, from admission to graduation, ensuring efficient handling of student data and facilitating seamless communication between students, faculty, and administration.              
-              <br /><br /><b>Technologies used:</b> HTML, CSS, JavaScript, Python, Django, PostgreSQL<br/><br/><br/>
-              <a href='https://slcm-valina.netlify.app' target='_blank' rel='noopener noreferrer' style={{color: "black", textDecoration: "none"}}><b>Click me for Preview.</b></a>
+          <div className="container mx-auto px-5 rounded" style={{ backgroundColor: 'lightgrey', maxWidth: "1200px" }}>
+            <div className="row align-items-center">
+              <div className="col-md-6 text-center">
+                <img alt="pms" src={slcm} className="img-fluid" style={{ maxHeight: '550px', width: 'auto' }} />
+              </div>
+              <div className="col-md-6 text-center text-sm-justify">
+                <span className="h3 d-block">Student Life Cycle Management System</span>
+                <p className="my-5">
+                  The Student Lifecycle Management (SLCM) System is an integrated software platform designed to streamline and enhance the administrative and academic processes of educational institutions. It provides a comprehensive solution to manage the entire student lifecycle, from admission to graduation, ensuring efficient handling of student data and facilitating seamless communication between students, faculty, and administration.
+                </p>
+                <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, Python, Django, PostgreSQL</p>
+                <a href="https://slcm-valina.netlify.app" target="_blank" rel="noopener noreferrer" className="btn btn-dark">
+                  Click me for Preview.
+                </a>
+              </div>
             </div>
           </div>
-          <div style={{ backgroundColor: 'pink', margin: '0px 200px', display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', padding: '50px 100px', borderRadius: '15px'}}>
-            <div><a href='https://slcm-valina.netlify.app' target='_blank' rel='noopener noreferrer'><img alt="pms" src={event} style={{height: '550px', width: "500px"}}/></a></div>
-            <div align='center' style={{ marginLeft: '10%', textAlign: "justify"  }}>
-              <span style={{ fontSize: '30px', textAlign: "center"}}>Event Management System</span>
-              <br /><br /><br />
+          <div className="container mx-auto px-5 rounded" style={{ backgroundColor: 'lightgrey', maxWidth: "1200px" }}>
+            <div className="row align-items-center">
+              <div className="col-md-6 text-center">
+            <img alt="pms" src={event}  className="img-fluid" style={{ maxHeight: '550px', width: 'auto' }}/>
+            </div>
+              <div className="col-md-6 text-center text-sm-justify">
+              <p className="h3 d-block">Event Management System</p>
+              <p className="my-5">
               An Event Management System (EMS) is a software solution designed to facilitate the planning, organization, and execution of events. These events can range from small meetings and conferences to large-scale conventions, festivals, and corporate events. The primary goal of an EMS is to streamline the entire event management process, ensuring that all aspects of the event are efficiently handled from start to finish.              
-              <br /><br /><b>Technologies used:</b> HTML, CSS, JavaScript, PHP, MySQL<br/><br/><br/>
+              </p>
+              <p><strong>Technologies used:</strong>HTML, CSS, JavaScript, PHP, MySQL</p>
               {/*<a href='https://slcm-valina.netlify.app' target='_blank' rel='noopener noreferrer' style={{color: "black", textDecoration: "none"}}><b>Click me for Preview.</b></a>*/}
-            </div>
+            </div></div>
           </div>
-          <div style={{ backgroundColor: 'pink', margin: '0px 200px', display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', padding: '50px 100px', borderRadius: '15px'}}>
-            <div><img alt="pms" src={pms} style={{height: '550px', width: "500px"}}/></div>
-            <div align='center' style={{ marginLeft: '10%', textAlign: "justify"  }}>
-              <span style={{ fontSize: '30px', textAlign: "center"}}>Project Management System</span>
-              <br /><br /><br />
+          <div className="container mx-auto px-5 rounded" style={{ backgroundColor: 'lightgrey', maxWidth: "1200px" }}>
+            <div className="row align-items-center">
+              <div className="col-md-6 text-center">
+                <img alt="pms" src={pms} className="img-fluid" style={{ maxHeight: '550px', width: 'auto' }}/></div>
+                <div className="col-md-6 text-center text-sm-justify">
+                <p className="h3 d-block">Project Management System</p>
+                <p className="my-5">
               An automated system to track the progress of the ongoing projects. It consists of a user authentication system, through which the employee can log in and start the timer for the particular module within the project, hence making it easier to track its progress. Supports three types of users: Admin, Project Manager, Employee
-              <br /><br /><b>Technologies used:</b> React, Node.js, Express, MySQL
-            </div>
+              </p>
+              <p><strong>Technologies used:</strong>React, Node.js, Express, MySQL</p>
+            </div></div>
           </div>
-          <div style={{ backgroundColor: 'pink', margin: '0px 200px', display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', padding: '50px 100px', borderRadius: '15px' }}>
-            <div><img alt="eCom" src={eCom} style={{height: '550px', width: "500px"}}/></div>
-            <div align='center' style={{ marginLeft: '10%', textAlign: "justify"  }}>
-              <span style={{ fontSize: '30px', textAlign: "center"}}>E-commerce System for Rubber Rollers</span>
-              <br /><br /><br />
-              Developed to provide an online system to make orders and purchase rubber/copper rollers. Customers can even log in and track their order delivery status. Quotations are sent by the admin when the customer requests for it and order can be placed once the payment is made.
-              <br /><br /><b>Technologies used:</b> React, Node.js, Express, MongoDB
-            </div>
+          <div className="container mx-auto px-5 rounded" style={{ backgroundColor: 'lightgrey', maxWidth: "1200px" }}>
+            <div className="row align-items-center">
+              <div className="col-md-6 text-center">
+                <img alt="eCom" src={eCom} className="img-fluid" style={{ maxHeight: '550px', width: 'auto' }}/></div>
+                <div className="col-md-6 text-center text-sm-justify">
+                <p className="h3 d-block">E-commerce System for Rubber Rollers</p>
+                <p className="my-5">
+              Developed to provide an online system to make orders and purchase rubber/copper rollers. Customers can even log in and track their order delivery status. Quotations are sent by the admin when the customer requests for it and order can be placed once the payment is made.</p>
+              <p><strong>Technologies used:</strong> React, Node.js, Express, MongoDB</p>
+            </div></div>
           </div>
-          <div style={{ backgroundColor: 'pink', margin: '0px 200px', display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', padding: '50px 100px', borderRadius: '15px' }}>
-            <div><img alt="eCom" src={eCom} style={{height: '550px', width: "500px"}}/></div>
-            <div align='center' style={{ marginLeft: '10%', textAlign: "justify"  }}>
-              <span style={{ fontSize: '30px', textAlign: "center"}}>More Website Templates</span>
+          <div className="container mx-auto px-5 rounded" style={{ backgroundColor: 'lightgrey', maxWidth: "1200px" }}>
+            <div className="row align-items-center">
+              <div className="col-md-6 text-center"><img alt="eCom" src={eCom} className="img-fluid" style={{ maxHeight: '550px', width: 'auto' }}/></div>
+              <div className="col-md-6 text-center text-sm-justify">
+              <p className="h3 d-block">More Website Templates</p>
               <br /><br /><br />
-              <ul>
+              <ul style={{listStyleType:"none"}}>
               <li><a href='https://clever-books-valina.netlify.app' target='_blank' rel='noopener noreferrer' style={{color: "black", textDecoration: "none"}}><b>Ecommerce Website</b></a></li>
 
               </ul>
-            </div>
+            </div></div>
           </div>
 
         </Carousel>

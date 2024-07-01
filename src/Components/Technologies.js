@@ -25,75 +25,60 @@ import eclipse from '../assets/tech/eclipse.png'
 import git from '../assets/tech/git.png'
 import github from '../assets/tech/github.png'
 import figma from '../assets/tech/figma.png';
+import ImageGrid from './ImageGrid'
 
 function Technologies() {
-  const [selectedOption, setSelectedOption] = useState('');
+  const [selectedOption, setSelectedOption] = useState('frontEnd');
 
   const handleSelectChange = (event) => {
     setSelectedOption(event.target.value);
   };
 
-  const renderContent = () => {
-    switch (selectedOption) {
-      case 'frontEnd':
-        return  <div className='flex-container'>
-                  <div><div><img src={html} width='200px' height='200px' alt='alt'/></div><div>HTML</div></div>
-                  <div><div><img src={css} width='200px' height='200px' alt='alt'/></div><div>CSS</div></div>
-                  <div><div><img src={js} width='200px' alt='alt'/></div><div>JavaScript</div></div>
-                  <div><div><img src={react} width='200px' alt='alt'/></div><div>React</div></div>
-                  <div><div><img src={bootstrap} width='200px' alt='alt'/></div><div>Bootstrap</div></div>
-                  <div><div><img src={jquery} width='200px' alt='alt'/></div><div>jQuery</div></div>
-                </div>;
-      case 'backEnd':
-        return  <div className='flex-container'>
-                  <div><div><img src={node} width='200px' height='200px' alt='alt'/></div><div>Node.js</div></div>
-                  <div><div><img src={express} width='200px' height='200px' alt='alt'/></div><div>Express</div></div>
-                  <div><div><img src={php} width='200px' height='200px' alt='alt'/></div><div>PHP</div></div>
-                  <div><div><img src={django} width='200px' height='200px' alt='alt'/></div><div>Django</div></div>
-                </div>;
-      case 'dataBase':
-        return  <div className='flex-container'>
-                  <div><div><img src={mysql} width='200px' height='200px' alt='alt'/></div><div>MySQL</div></div>
-                  <div><div><img src={mongo} width='200px' height='200px' alt='alt'/></div><div>MongoDB</div></div>
-                  <div><div><img src={postgresql} width='200px' height='200px' alt='alt'/></div><div>PostgreSQL</div></div>
-                  <div><div><img src={oracle} width='200px' height='200px' alt='alt'/></div><div>Oracle Database</div></div>
-                  <div><div><img src={redis} width='200px' height='200px' alt='alt'/></div><div>Redis</div></div>
-                </div>;
-      case 'Machine Learning':
-        return  <div className='flex-container'>
-                  <div><div><img src={python} width='200px' height='200px' alt='alt'/></div><div>Python</div></div>
-                  <div><div><img src={numpy} width='200px' height='200px' alt='alt'/></div><div>Numpy</div></div>
-                  <div><div><img src={da} width='200px' height='200px' alt='alt'/></div><div>Data Analytics</div></div>
-                </div>;
-      case 'Programming Languages':
-        return  <div className='flex-container'>
-                  <div><div><img src={java} width='200px' height='200px' alt='alt'/></div><div>Java</div></div>
-                  <div><div><img src={cp} width='200px' height='200px' alt='alt'/></div><div>C++</div></div>
-                  <div><div><img src={python} width='200px' height='200px' alt='alt'/></div><div>Python</div></div>
-                  <div><div><img src={c} width='200px' height='200px' alt='alt'/></div><div>C</div></div>
-                </div>;
-      case 'Development Tools':
-        return  <div className='flex-container'>
-                  <div><div><img src={vs} width='200px' height='200px' alt='alt'/></div><div>Visual Studio Code</div></div>
-                  <div><div><img src={eclipse} width='200px' height='200px' alt='alt'/></div><div>Eclipse</div></div>
-                  <div><div><img src={github} width='200px' height='200px' alt='alt'/></div><div>GitHub</div></div>
-                  <div><div><img src={git} width='200px' height='200px' alt='alt'/></div><div>Git</div></div>
-                  <div><div><img src={figma} width='200px' height='200px' alt='alt'/></div><div>Figma</div></div>
-                </div>;
-      default:
-        return  <div className='flex-container'>
-                  <div><div><img src={html} width='200px' height='200px' alt='alt'/></div><div>HTML</div></div>
-                  <div><div><img src={css} width='200px' height='200px' alt='alt'/></div><div>CSS</div></div>
-                  <div><div><img src={js} width='200px' alt='alt'/></div><div>JavaScript</div></div>
-                  <div><div><img src={react} width='200px' alt='alt'/></div><div>React</div></div>
-                  <div><div><img src={bootstrap} width='200px' alt='alt'/></div><div>Bootstrap</div></div>
-                  <div><div><img src={jquery} width='200px' alt='alt'/></div><div>jQuery</div></div>
-                </div>;
-    }
+  const groups = {
+    frontEnd: [
+        { src: html, alt: 'HTML', title: 'HTML' },
+        { src: css, alt: 'CSS', title: 'CSS' },
+        { src: js, alt: 'JavaScript', title: 'JavaScript' },
+        { src: react, alt: 'React', title: 'React' },
+        { src: bootstrap, alt: 'Bootstrap', title: 'Bootstrap' },
+        { src: jquery, alt: 'jQuery', title: 'jQuery' },
+    ],
+    backEnd: [
+      { src: node, alt: 'Node.js', title: 'Node.js' },
+      { src: express, alt: 'Express', title: 'Express' },
+      { src: php, alt: 'PHP', title: 'PHP' },
+      { src: django, alt: 'Django', title: 'Django' },
+    ],
+    dataBase: [
+      { src: mysql, alt: 'MySQL', title: 'MySQL' },
+      { src: mongo, alt: 'MongoDB', title: 'MongoDB' },
+      { src: postgresql, alt: 'PostgreSQL', title: 'PostgreSQL' },
+      { src: oracle, alt: 'Oracle Database', title: 'Oracle Database' },
+      { src: redis, alt: 'Redis', title: 'Redis' },
+    ],
+    'Machine Learning': [
+      { src: python, alt: 'Python', title: 'Python' },
+      { src: numpy, alt: 'Numpy', title: 'Numpy' },
+      { src: da, alt: 'Data Analytics', title: 'Data Analytics' },
+    ],
+    'Programming Languages': [
+      { src: java, alt: 'Java', title: 'Java' },
+      { src: cp, alt: 'C++', title: 'C++' },
+      { src: python, alt: 'Python', title: 'Python' },
+      { src: c, alt: 'C', title: 'C' },
+    ],
+    'Development Tools': [
+      { src: vs, alt: 'Visual Studio Code', title: 'Visual Studio Code' },
+      { src: eclipse, alt: 'Eclipse', title: 'Eclipse' },
+      { src: github, alt: 'GitHub', title: 'GitHub' },
+      { src: git, alt: 'Git', title: 'Git' },
+      { src: figma, alt: 'Figma', title: 'Figma' },
+    ],
   };
+
   return (
-    <div id='tech' style={{fontFamily:"cursive",height:"100vh",padding:"10px"}}>
-      <div style={{margin:"100px"}}>
+    <div id='tech' className='' style={{fontFamily:"cursive", minHeight:"100%", padding:"10px"}}>
+      <div className='m-5'>
         <span style={{fontSize:"50px"}}>Technologies</span><br/><br/>
         <div style={{backgroundColor:"grey", padding: "20px"}}>
         <select style={{fontSize:"20px"}} onChange={handleSelectChange}>
@@ -104,7 +89,7 @@ function Technologies() {
           <option value='Machine Learning'>Machine Learning</option>
           <option value='Development Tools'>Development Tools</option>
         </select>
-        <div id='content' style={{margin:"10px",backgroundColor:"lightgray"}}>{renderContent()}</div>
+        <div id='content' style={{margin:"10px",backgroundColor:"lightgray"}}><ImageGrid images={groups[selectedOption]}/></div>
         </div>
       </div>
     </div>

@@ -7,9 +7,9 @@ import Tab from 'react-bootstrap/Tab';
 
 const Education=()=>{
     return(
-        <div style={{height: "60vh", fontFamily: "cursive"}}>
+        <div className="" style={{height: "60vh", fontFamily: "cursive"}}>
             <span style={{ fontSize: '50px'}}>Qualifications</span>
-            <div style={{marginTop: "100px", marginLeft: "100px", overflow: "hidden", backgroundColor: "lightgrey", padding: "40px", width: "1300px"}}>
+            <div className="mx-5 mx-sx-0" style={{marginTop: "100px", overflow: "hidden", backgroundColor: "lightgrey", padding: "40px"}}>
                 <Tab.Container id="list-group-tabs-example" style={{marginTop: "500px"}} defaultActiveKey="#mca">
                 <Row>
                     <Col sm={4}>
@@ -28,7 +28,7 @@ const Education=()=>{
                         </ListGroup.Item>
                     </ListGroup>
                     </Col>
-                    <Col sm={8} style={{left: "400px", position: "absolute", fontSize: "25px", lineHeight: "1.9"}}>
+                    <Col sm={8} style={{fontSize: "25px", lineHeight: "1.9"}}>
                     <Tab.Content>
                         <Tab.Pane eventKey="#mca"><b>Master of Computer Applications<br/>Manipal Institute of Technology (2023-2025)<br/>CGPA : 9.53</b></Tab.Pane>
                         <Tab.Pane eventKey="#bca"><b>Bachelor of Computer Applications<br/>St. Aloysius College (2020-2023)<br/>CGPA : 8.94</b></Tab.Pane>
