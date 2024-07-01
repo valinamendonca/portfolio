@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function ImageGrid({ images }) {
   return (
     <div className="container">
-      <div className="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-12 g-3">
+      <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-12 g-3">
         {images.map((image, index) => (
           <div key={index} className="col">
           <div className="d-flex flex-column align-items-center">

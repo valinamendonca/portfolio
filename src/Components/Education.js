@@ -7,9 +7,9 @@ import Tab from 'react-bootstrap/Tab';
 
 const Education=()=>{
     return(
-        <div className="" style={{height: "60vh", fontFamily: "cursive"}}>
+        <div className="mb-5" style={{height: "60vh", fontFamily: "cursive"}}>
             <span style={{ fontSize: '50px'}}>Qualifications</span>
-            <div className="mx-5 mx-sx-0" style={{marginTop: "100px", overflow: "hidden", backgroundColor: "lightgrey", padding: "40px"}}>
+            <div className="mx-5 mx-sx-0" style={{marginBottom: "80px", marginTop: "30px", overflow: "hidden", backgroundColor: "lightgrey", padding: "40px"}}>
                 <Tab.Container id="list-group-tabs-example" style={{marginTop: "500px"}} defaultActiveKey="#mca">
                 <Row>
                     <Col sm={4}>

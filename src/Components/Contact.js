@@ -13,7 +13,7 @@ function Contact() {
     <div>
       <br /><br />
       <span style={{ fontSize: "50px" }}>Get in Touch</span><br /><br /><br/><br/>
-      <div align='center' className='m-auto' style={{ backgroundColor: "#FFEA00", width: "600px", height: "300px", borderRadius: "50px", padding: "50px", fontSize: "45px" }}>
+      <div align='center' className='m-auto' style={{ backgroundColor: "#FFEA00", maxWidth: "600px", maxHeight: "300px", borderRadius: "50px", padding: "50px", fontSize: "45px" }}>
         <div style={{ marginTop: "9%" }}>
           <a href={`tel:${phone}`} target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faPhone} style={{ marginRight: "40px" }} /></a>
           <a href={`mailto:${email}`} target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faGoogle} style={{ marginRight: "40px" }} /></a>

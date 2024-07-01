@@ -52,7 +52,6 @@ function Projects() {
           showStatus={false}
           infiniteLoop
           useKeyboardArrows
-          
           interval={5000}
           renderArrowPrev={renderArrowPrev}
           renderArrowNext={renderArrowNext}
