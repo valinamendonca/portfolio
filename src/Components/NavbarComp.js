@@ -31,7 +31,7 @@ function NavbarComp() {
       <Container>
         <Navbar.Brand href="#about">
             <img
-              src={logo}
+              src={logo} 
               width="50"
               height="40"
               className="d-inline-block align-top"
