@@ -78,7 +78,7 @@ function Technologies() {
 
   return (
     <div id='tech' className='mt-5' style={{fontFamily:"cursive", minHeight:"100%", padding:"10px"}}>
-      <div className='m-5'>
+      <div className='m-5 my-10'>
         <span style={{fontSize:"50px"}}>Technologies</span><br/><br/>
         <div style={{backgroundColor:"grey", padding: "20px"}}>
         <select style={{fontSize:"20px"}} onChange={handleSelectChange}>

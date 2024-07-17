@@ -34,3 +34,10 @@
         font-size: 80px;
         padding: 10px;
 }
+
+@media (max-width: 576px) {
+        .max-height-sm {
+                height: 500px; /* Adjust height as per your requirement */
+                overflow-y: auto; /* Optional: Add scrolling if content exceeds height */
+        }
+}

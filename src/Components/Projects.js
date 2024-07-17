@@ -42,7 +42,7 @@ function Projects() {
     );
 
   return (
-    <div id='projects' style={{ fontFamily: 'cursive' }}>
+    <div id='projects' style={{ fontFamily: 'cursive' }} className='my-10'>
       <span style={{ fontSize: '50px' }}>Projects</span>
       <br />
       <br />
@@ -56,10 +56,10 @@ function Projects() {
           renderArrowPrev={renderArrowPrev}
           renderArrowNext={renderArrowNext}
         >
-          <div className="container mx-auto px-5 rounded" style={{ backgroundColor: 'lightgrey', maxWidth: "1200px" }}>
+          <div className="container mx-auto px-5 rounded px-sm-5 max-height-sm" style={{ backgroundColor: 'lightgrey', maxWidth: "1200px" }}>
             <div className="row align-items-center">
               <div className="col-md-6 text-center">
-                <img alt="pms" src={slcm} className="img-fluid" style={{ maxHeight: '550px', width: 'auto' }} />
+                <img alt="pms" src={slcm} className="img-fluid d-none d-sm-block" style={{ maxHeight: '550px', width: 'auto' }} />
               </div>
               <div className="col-md-6 text-center text-sm-justify">
                 <span className="h3 d-block">Student Life Cycle Management System</span>
@@ -73,10 +73,10 @@ function Projects() {
               </div>
             </div>
           </div>
-          <div className="container mx-auto px-5 rounded" style={{ backgroundColor: 'lightgrey', maxWidth: "1200px" }}>
+          <div className="container mx-auto px-5 rounded px-sm-5 max-height-sm" style={{ backgroundColor: 'lightgrey', maxWidth: "1200px" }}>
             <div className="row align-items-center">
               <div className="col-md-6 text-center">
-            <img alt="pms" src={event}  className="img-fluid" style={{ maxHeight: '550px', width: 'auto' }}/>
+            <img alt="pms" src={event}  className="img-fluid d-none d-sm-block" style={{ maxHeight: '550px', width: 'auto' }}/>
             </div>
               <div className="col-md-6 text-center text-sm-justify">
               <p className="h3 d-block">Event Management System</p>
@@ -87,10 +87,10 @@ function Projects() {
               {/*<a href='https://slcm-valina.netlify.app' target='_blank' rel='noopener noreferrer' style={{color: "black", textDecoration: "none"}}><b>Click me for Preview.</b></a>*/}
             </div></div>
           </div>
-          <div className="container mx-auto px-5 rounded" style={{ backgroundColor: 'lightgrey', maxWidth: "1200px" }}>
+          <div className="container mx-auto px-5 rounded px-sm-5 max-height-sm" style={{ backgroundColor: 'lightgrey', maxWidth: "1200px" }}>
             <div className="row align-items-center">
               <div className="col-md-6 text-center">
-                <img alt="pms" src={pms} className="img-fluid" style={{ maxHeight: '550px', width: 'auto' }}/></div>
+                <img alt="pms" src={pms} className="img-fluid d-none d-sm-block" style={{ maxHeight: '550px', width: 'auto' }}/></div>
                 <div className="col-md-6 text-center text-sm-justify">
                 <p className="h3 d-block">Project Management System</p>
                 <p className="my-5">
@@ -99,10 +99,10 @@ function Projects() {
               <p><strong>Technologies used:</strong>React, Node.js, Express, MySQL</p>
             </div></div>
           </div>
-          <div className="container mx-auto px-5 rounded" style={{ backgroundColor: 'lightgrey', maxWidth: "1200px" }}>
+          <div className="container mx-auto px-5 rounded px-sm-5 max-height-sm" style={{ backgroundColor: 'lightgrey', maxWidth: "1200px" }}>
             <div className="row align-items-center">
               <div className="col-md-6 text-center">
-                <img alt="eCom" src={eCom} className="img-fluid" style={{ maxHeight: '550px', width: 'auto' }}/></div>
+                <img alt="eCom" src={eCom} className="img-fluid d-none d-sm-block" style={{ maxHeight: '550px', width: 'auto' }}/></div>
                 <div className="col-md-6 text-center text-sm-justify">
                 <p className="h3 d-block">E-commerce System for Rubber Rollers</p>
                 <p className="my-5">
@@ -110,9 +110,9 @@ function Projects() {
               <p><strong>Technologies used:</strong> React, Node.js, Express, MongoDB</p>
             </div></div>
           </div>
-          <div className="container mx-auto px-5 rounded" style={{ backgroundColor: 'lightgrey', maxWidth: "1200px" }}>
+          <div className="container mx-auto px-5 rounded px-sm-5 max-height-sm" style={{ backgroundColor: 'lightgrey', maxWidth: "1200px" }}>
             <div className="row align-items-center">
-              <div className="col-md-6 text-center"><img alt="eCom" src={eCom} className="img-fluid" style={{ maxHeight: '550px', width: 'auto' }}/></div>
+              <div className="col-md-6 text-center"><img alt="eCom" src={eCom} className="img-fluid d-none d-sm-block" style={{ maxHeight: '550px', width: 'auto' }}/></div>
               <div className="col-md-6 text-center text-sm-justify">
               <p className="h3 d-block">More Website Templates</p>
               <br /><br /><br />
