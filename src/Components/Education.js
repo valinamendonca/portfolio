@@ -36,10 +36,10 @@ const Education = () => {
                                     <b>Bachelor of Computer Applications<br />St. Aloysius College (2020-2023)<br />CGPA: 8.94</b>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="#12">
-                                    <b>10<sup>th</sup> Grade<br />St. Aloysius PU College (2020)<br />Percentage: 89.5%</b>
+                                    <b>12<sup>th</sup> Grade<br />St. Aloysius PU College (2020)<br />Percentage: 89.5%</b>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="#10">
-                                    <b>12<sup>th</sup> Grade<br />St. Xavier's High School (2018)<br />Percentage: 82.33%</b>
+                                    <b>10<sup>th</sup> Grade<br />St. Xavier's High School (2018)<br />Percentage: 82.33%</b>
                                 </Tab.Pane>
                             </Tab.Content>
                         </Col>
